@@ -1,6 +1,5 @@
 import 'package:fintech_ui_tutorial/pages/top_up.dart';
 import 'package:fintech_ui_tutorial/widgets/credit_card.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class TransferMoney extends StatelessWidget {

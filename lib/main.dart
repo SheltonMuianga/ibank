@@ -3,11 +3,8 @@ import 'package:fintech_ui_tutorial/pages/home.dart';
 import 'package:fintech_ui_tutorial/pages/my_card.dart';
 import 'package:fintech_ui_tutorial/pages/profile.dart';
 import 'package:fintech_ui_tutorial/pages/scan.dart';
-import 'package:fintech_ui_tutorial/widgets/action_button.dart';
-import 'package:fintech_ui_tutorial/widgets/transaction_list.dart';
 import 'package:flutter/material.dart';
 
-import 'widgets/credit_card.dart';
 
 void main() {
   runApp(const MyApp());
