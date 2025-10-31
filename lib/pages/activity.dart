@@ -49,7 +49,7 @@ class ActivityPage extends StatelessWidget {
                         width: 340,
                         height: 75,
                         decoration: BoxDecoration(
-                          color: (index % 2 == 0) ? const Color.fromARGB(255, 16, 80, 98) : Colors.black,
+                          color: (index % 2 == 0) ? const Color.fromARGB(255, 233, 6, 6) : Colors.black,
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Padding(
@@ -98,7 +98,7 @@ class ActivityPage extends StatelessWidget {
                 width: double.maxFinite,
                 height: 350,
                 decoration: BoxDecoration(
-                  border: Border.all(color: Colors.grey[300]!),
+                  border: Border.all(color: Colors.red[300]!),
                   borderRadius: BorderRadius.circular(17),
                 ),
                 child: Column(
@@ -108,12 +108,12 @@ class ActivityPage extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w500,
-                        color: Colors.grey,
+                        color: Colors.red,
                       ),
                     ),
                     const SizedBox(height: 4),
                     const Text(
-                      "\$6,345.00",
+                      "MZN 6,345.00",
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
@@ -166,10 +166,10 @@ class ActivityPage extends StatelessWidget {
                                   const FlSpot(6, 6),
                                 ],
                                 isCurved: true,
-                                color: Colors.teal,
+                                color: const Color.fromARGB(255, 230, 29, 3),
                                 barWidth: 3,
                                 dotData: const FlDotData(show: false),
-                                belowBarData: BarAreaData(show: true, color: Colors.teal.withOpacity(0.07)))
+                                belowBarData: BarAreaData(show: true, color: const Color.fromRGBO(232, 36, 36, 1).withOpacity(0.07)))
                           ],
                         ),
                       ),
@@ -199,7 +199,7 @@ class ActivityPage extends StatelessWidget {
                       ),
                       Icon(
                         Icons.keyboard_arrow_down,
-                        color: Colors.teal,
+                        color: Colors.red,
                       )
                     ],
                   ),
@@ -213,7 +213,7 @@ class ActivityPage extends StatelessWidget {
                       backgroundColor: Color.fromARGB(255, 239, 243, 245),
                       child: Icon(
                         Icons.payments_rounded,
-                        color: Colors.blue,
+                        color: Colors.red,
                       ),
                     ),
                     title: Text(
@@ -224,7 +224,7 @@ class ActivityPage extends StatelessWidget {
                     ),
                     subtitle: Text("ui8.net"),
                     trailing: Text(
-                      "-\$45.99",
+                      "-MZN 45.99",
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 14

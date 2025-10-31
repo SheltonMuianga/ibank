@@ -15,7 +15,7 @@ class TimeOptionButton extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 6),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          color: isSelected ? Colors.teal.withOpacity(0.06) : Colors.transparent,
+          color: isSelected ? const Color.fromARGB(255, 233, 9, 9).withOpacity(0.06) : Colors.transparent,
         ),
         child: Text(
           label,

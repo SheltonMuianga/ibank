@@ -14,7 +14,7 @@ class TransactionList extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Today, Dec 29"),
+                Text("Today, Oct 24"),
                 Row(
                   children: [
                     Text("All Transactions"),
@@ -34,7 +34,7 @@ class TransactionList extends StatelessWidget {
             title: Text("Gym"),
             subtitle: Text("Payment"),
             trailing: Text(
-              "-\$45.99",
+              "-MZN 45.99",
               // style: TextStyle(color: Colors.red),
             ),
           ),
@@ -47,10 +47,10 @@ class TransactionList extends StatelessWidget {
                 color: Colors.teal,
               ),
             ),
-            title: Text("Bank of America"),
+            title: Text("Bank of Mozambique"),
             subtitle: Text("Deposit"),
             trailing: Text(
-              "+\$1,328.00",
+              "+MZN 1,328.00",
               style: TextStyle(color: Colors.teal),
             ),
           ),
@@ -63,10 +63,10 @@ class TransactionList extends StatelessWidget {
                 color: Colors.orangeAccent,
               ),
             ),
-            title: Text("To Brody Armando"),
+            title: Text("To Brody Djalaluline"),
             subtitle: Text("Sent"),
             trailing: Text(
-              "-\$699.00",
+              "-MZN 699.00",
               // style: TextStyle(color: Colors.red),
             ),
           )

@@ -45,12 +45,12 @@ class MyCardPage extends StatelessWidget {
                   ),
                 ),
                 style: ElevatedButton.styleFrom(
-                  side: BorderSide(color: Colors.grey[100]!),
+                  side: BorderSide(color: Colors.red[100]!),
                   fixedSize: const Size(double.maxFinite, 55),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12)
                   ),
-                  backgroundColor: Colors.grey[100],
+                  backgroundColor: Colors.red[100],
                   foregroundColor: Colors.black
                 ),
               )
@@ -116,7 +116,7 @@ class FrontCard extends StatelessWidget {
               Expanded(
                 flex: 1,
                 child: Container(
-                  color: const Color.fromARGB(255, 16, 80, 98),
+                  color: const Color.fromARGB(255, 233, 5, 5),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16.0),
                     child: Row(
@@ -127,7 +127,7 @@ class FrontCard extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                              Text(
-                              'Anabella Angela',
+                              'Edson Magaia',
                               style: TextStyle(
                                   fontSize: 17,
                                   fontWeight: FontWeight.bold,
@@ -237,7 +237,7 @@ class BackCard extends StatelessWidget {
                   ],
                 ),
                 const Text(
-                  "Anabella Angela",
+                  "Edson Magaia",
                   style: TextStyle(color: Colors.white, fontSize: 17, fontWeight: FontWeight.bold),
                 ),
               ],

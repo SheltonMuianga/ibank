@@ -33,7 +33,7 @@ class _TopUpBottomSheetState extends State<TopUpBottomSheet> {
             trailing: const Icon(
               Icons.keyboard_arrow_down,
               size: 25,
-              color: Colors.grey,
+              color: Color.fromARGB(255, 232, 12, 12),
             ),
             contentPadding: const EdgeInsets.all(12),
             shape: RoundedRectangleBorder(
@@ -60,12 +60,12 @@ class _TopUpBottomSheetState extends State<TopUpBottomSheet> {
                 },
                 icon: const Icon(Icons.remove),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.grey[100],
+                  backgroundColor: const Color.fromARGB(255, 231, 9, 9),
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
                 ),
               ),
               Text(
-                "\$ ${amount.toStringAsFixed(0)}",
+                "MZN ${amount.toStringAsFixed(0)}",
                 style: const TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -79,7 +79,7 @@ class _TopUpBottomSheetState extends State<TopUpBottomSheet> {
                 },
                 icon: const Icon(Icons.add),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.grey[100],
+                  backgroundColor: const Color.fromARGB(255, 232, 6, 6),
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
                 ),
               ),
@@ -90,7 +90,7 @@ class _TopUpBottomSheetState extends State<TopUpBottomSheet> {
             value: amount,
             min: 5,
             max: 500,
-            activeColor: const Color.fromARGB(255, 16, 80, 98),
+            activeColor: const Color.fromARGB(255, 231, 11, 11),
             onChanged: (value) {
               setState(() {
                 amount = value;
@@ -115,10 +115,10 @@ class _TopUpBottomSheetState extends State<TopUpBottomSheet> {
                     height: 70,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                        color: amount == value ? const Color.fromARGB(255, 16, 80, 98) : Colors.grey[100],
+                        color: amount == value ? const Color.fromARGB(255, 230, 8, 8) : const Color.fromARGB(255, 231, 9, 9),
                         borderRadius: BorderRadius.circular(12)),
                     child: Text(
-                      '\$$value',
+                      'MZN $value',
                       style: TextStyle(
                           color: amount == value ? Colors.white : Colors.black,
                           fontWeight: FontWeight.w600,
@@ -138,7 +138,7 @@ class _TopUpBottomSheetState extends State<TopUpBottomSheet> {
                 fixedSize: const Size(double.maxFinite, 60),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
             child: const Text(
-              "Top Up",
+              "Send",
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,

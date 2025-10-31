@@ -10,7 +10,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 16, 80, 98),
+      backgroundColor: const Color.fromARGB(255, 232, 7, 7),
       body: SafeArea(
         bottom: false,
         child: Column(
@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
                         style: TextStyle(color: Colors.white),
                       ),
                       Text(
-                        "Anabella Angela ",
+                        "Edson Magaia",
                         style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
                       ),
                     ],

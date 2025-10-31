@@ -11,7 +11,7 @@ class TopUpPage extends StatefulWidget {
 }
 
 class _TopUpPageState extends State<TopUpPage> {
-  String selectedProvider = 'Bank Of America';
+  String selectedProvider = 'Bank Of Mozambique';
 
   @override
   Widget build(BuildContext context) {
@@ -35,20 +35,20 @@ class _TopUpPageState extends State<TopUpPage> {
             const SizedBox(height: 15),
             PaymentProvider(
               image: "assets/bank_of_america.jpg",
-              name: "Bank Of America",
+              name: "Bank Of Mozambique",
               account: "**** **** **** 1990",
-              isSelected: selectedProvider == 'Bank Of America',
+              isSelected: selectedProvider == 'Bank Of Mozambique',
               onChanged: (value) {
                 if (value == true) {
                   setState(() {
-                    selectedProvider = 'Bank Of America';
+                    selectedProvider = 'Bank Of Mozambique';
                   });
                 }
               },
             ),
             PaymentProvider(
               image: "assets/us_bank.png",
-              name: "U.S Bank",
+              name: "M.Z Bank",
               account: "**** **** **** 1990",
               isSelected: selectedProvider == 'U.S Bank',
               onChanged: (value) {
@@ -139,9 +139,9 @@ class _TopUpPageState extends State<TopUpPage> {
 
   String getAccountForProvider(String provider) {
     switch (provider) {
-      case 'Bank Of America':
+      case 'Bank Of Mozambique':
         return '**** **** **** 1990';
-      case 'U.S Bank':
+      case 'M.Z Bank':
         return '**** **** **** 1990';
       default:
         return 'Easy Payment';
@@ -150,9 +150,9 @@ class _TopUpPageState extends State<TopUpPage> {
 
   String getImageForProvider(String provider) {
     switch (provider) {
-      case 'Bank Of America':
+      case 'Bank Of Mozambique':
         return 'assets/bank_of_america.jpg';
-      case 'U.S Bank':
+      case 'M.Z Bank':
         return 'assets/us_bank.png';
       case 'Paypal':
         return 'assets/paypal.jpg';

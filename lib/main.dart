@@ -19,9 +19,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Fintech App',
+      title: 'Bank Moz',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 16, 80, 98)),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 232, 12, 12)),
         useMaterial3: true,
       ),
       home: const MainPage(),
@@ -60,7 +60,7 @@ class _MainPageState extends State<MainPage> {
             tabItem(Icons.credit_card, "My Card", 1),
             FloatingActionButton(
               onPressed: () => onTabTapped(2),
-              backgroundColor: const Color.fromARGB(255, 16, 80, 98),
+              backgroundColor: const Color.fromARGB(255, 231, 9, 9),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
               child: const Icon(
                 Icons.qr_code_scanner,
@@ -82,11 +82,11 @@ class _MainPageState extends State<MainPage> {
         children: [
           Icon(
             icon,
-            color: currentIndex == index ? Colors.black : Colors.grey,
+            color: currentIndex == index ? Colors.black : const Color.fromARGB(255, 233, 13, 13),
           ),
           Text(
             label,
-            style: TextStyle(fontSize: 10, color: currentIndex == index ? Theme.of(context).primaryColor : Colors.grey),
+            style: TextStyle(fontSize: 10, color: currentIndex == index ? Theme.of(context).primaryColor : const Color.fromARGB(255, 232, 8, 8)),
           )
         ],
       ),

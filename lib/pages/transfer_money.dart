@@ -104,7 +104,7 @@ class TransferMoney extends StatelessWidget {
                                           children: [
                                             Icon(
                                               Icons.check,
-                                              color: Colors.teal,
+                                              color: Colors.red,
                                             )
                                           ],
                                         ),
@@ -116,11 +116,11 @@ class TransferMoney extends StatelessWidget {
                                   backgroundImage: AssetImage("assets/person.jpeg"),
                                 ),
                                 const Text(
-                                  "Maria",
+                                  "Andrew",
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
                                 const Text(
-                                  "Sevchenko",
+                                  "Junior",
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 )
                               ],
